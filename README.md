@@ -40,8 +40,8 @@ watspeed-enrollment-ml/
 
 | Model | AUC-ROC | Notes |
 |---|---|---|
-| Logistic Regression | — | Baseline |
-| Random Forest | — | Main model |
+| Logistic Regression | 0.59 | Baseline |
+| Random Forest | 0.54 | Main model |
 
 Both models use `class_weight='balanced'` to handle the ~##/## class imbalance between enrolled and dropped learners.
 

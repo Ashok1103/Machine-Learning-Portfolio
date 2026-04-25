@@ -1,80 +1,45 @@
-# WatSPEED Enrollment Prediction — ML Portfolio Project
+# Machine Learning Portfolio
 
-Author: Ashok Kumar Ramu  
-Role: Market Research Analyst Co-op — WatSPEED, University of Waterloo  
-
----
-
-## Overview
-
-WatSPEED is the University of Waterloo's professional development division. This project was completed as a final deliverable during my co-op term.
-
-The goal was to build a machine learning pipeline that predicts whether a learner will remain enrolled or drop out, based on features like course type, geography, and professional background. A secondary analysis used K-Means clustering to identify distinct learner segments.
+**Ashok Kumar Ramu**  
+Department of Physics and Astronomy, University of Waterloo  
 
 ---
 
-## Project Structure
-watspeed-enrollment-ml/
-├── data/
-│   ├── raw/                        ← original enrollment files (not included)
-│   └── processed/                  ← cleaned data (not included)
-├── notebooks/
-│   ├── 01_data_processing.ipynb    ← LinkedIn ad data processing
-│   ├── 02_data_analysis.ipynb      ← EDA and feature engineering (not included)
-│   └── 03_ml_model.ipynb           ← model training and evaluation
-├── src/
-│   ├── preprocess.py               ← data cleaning functions
-│   ├── train.py                    ← model training logic
-│   └── evaluate.py                 ← evaluation metrics and plots
-├── outputs/
-│   ├── figures/                    ← saved charts
-│   └── models/                     ← saved trained models (not included)
-├── requirements.txt
-└── README.md
+## About
 
-> **Note:** Raw, processed data, 02_data_analysis, models are excluded from this repository due to privacy considerations. The data contains enrollment records from real learners and is the property of WatSPEED, University of Waterloo.
+I'm a Physics and Astronomy student at the University of Waterloo with hands-on industry experience in data analysis and machine learning through co-op. My background in computational physics gives me a strong foundation in numerical methods, statistical modelling, and writing clean, reproducible code — which I apply directly to ML problems.
+
+This portfolio collects my applied machine learning projects. Each project includes full source code, notebooks, model outputs, and documentation.
 
 ---
 
-## Models
+## Projects
 
-| Model | AUC-ROC | Notes |
-|---|---|---|
-| Logistic Regression | 0.59 | Baseline |
-| Random Forest | 0.54 | Main model |
+### 1. WatSPEED Enrollment Prediction
+`Classification · Random Forest · Logistic Regression · Feature Engineering · K-Means Clustering`
 
-Both models use `class_weight='balanced'` to handle the ~##/## class imbalance between enrolled and dropped learners.
+Built an end-to-end ML pipeline to predict whether a professional learner will remain enrolled or drop out of a continuing education program. Completed as a final deliverable during my Market Research Analyst co-op at WatSPEED, University of Waterloo.
 
----
+- Merged and cleaned enrollment data across 3 programs and multiple years
+- Engineered features from raw job titles (491 unique values) using rule-based parsing
+- Trained and compared Logistic Regression (baseline) and Random Forest (main model) with class imbalance handling
+- Applied K-Means clustering to identify distinct learner segments
+- Built modular `src/` pipeline separating preprocessing, training, and evaluation
 
-## Feature Engineering
-
-- Merged enrollment data across different programs
-- Extracted job family from raw job titles using rule-based parsing (handling 491 unique values)
-- Capped job family at top 30 categories, grouping the remainder as `Other` to avoid near-empty dummy columns
-- One-hot encoded course title, province, program, and job family
+→ [View Project](./WatSPEED%20Enrolment%20Prediction)
 
 ---
 
-## Tech Stack
+## Skills
 
-- Python 3.13
-- pandas, numpy
-- scikit-learn
-- matplotlib
-- openpyxl
-- joblib
+- **Languages:** Python
+- **ML:** scikit-learn, Random Forest, Logistic Regression, K-Means, feature engineering, class imbalance handling
+- **Data:** pandas, numpy, openpyxl, joblib
+- **Visualization:** matplotlib
+- **Workflow:** Jupyter Lab, modular src/ architecture, Git
 
 ---
 
-## Figures
+## Contact
 
-**Random Forest — Feature Importance**  
-![Feature Importance](outputs/figures/rf_feature_importance.png)
-
-**Confusion Matrices**  
-![LR Confusion Matrix](outputs/figures/lr_confusion_matrix.png)
-![RF Confusion Matrix](outputs/figures/rf_confusion_matrix.png)
-
-**K-Means Elbow Plot**  
-![Elbow Plot](outputs/figures/kmeans_elbow.png)
+Feel free to reach out via GitHub for questions about any of these projects.

@@ -31,7 +31,7 @@ detects dual nuclei. Misclassified edge-on galaxies show the model attending to 
 brightness envelope of a projected disk, which is geometrically similar to a smooth
 elliptical. This is a real astrophysical degeneracy, not a model failure.
 
-![Grad-CAM misclassified](results/gradcam_misclassified.png)
+![Grad-CAM misclassified](results/gradcam_wrong.png)
 
 ---
 

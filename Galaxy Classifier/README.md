@@ -3,7 +3,7 @@
 Classifies galaxy morphology from DECam Legacy Survey imaging using a fine-tuned ResNet-18.
 Three classes: **Smooth / Elliptical**, **Spiral**, and **Edge-on / Disturbed**.
 
-**[Live demo](https://ashok2616-galaxy-morphology-classifier.hf.space)**
+**[Live demo](https://ashok1103-galaxy-morphology-classifier.hf.space)**
 
 ---
 

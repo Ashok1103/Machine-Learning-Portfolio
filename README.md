@@ -43,7 +43,7 @@ Trained a galaxy morphology classifier on 17,736 images from the DECam Legacy Su
 | Custom CNN | 422,179 | 87.8% |
 | ResNet-18 fine-tuned | 11,178,051 | 90.0% |
  
-**[View Project](https://github.com/Ashok1103/galaxy-classifier)** | **[Live Demo](https://ashok1103-galaxy-morphology-classifier.hf.space)**
+**[View Project](https://github.com/Ashok1103/Galaxy Classifier)** | **[Live Demo](https://ashok1103-galaxy-morphology-classifier.hf.space)**
  
 ---
  
